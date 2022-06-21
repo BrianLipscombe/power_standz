@@ -8,6 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: rgb(0, 0, 0);
     font-family: 'Lato';
+    text-align: center;
 }
 
 /* from Bulma */
@@ -17,6 +18,17 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.display-4 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    position: relative;
+}
+
+.w-50 {
+    margin: auto;
 }
 
 .logo-font {
