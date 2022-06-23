@@ -50,13 +50,17 @@ body {
     color: white;
 }
 
-.shop-now-button:hover,
+.shop-now-button:hover {
+    background: rgb(10, 100, 0);
+    color: white;
+}
+
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: rgb(10, 100, 0);
     color: white;
 }
 
