@@ -53,7 +53,7 @@ body {
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .shop-now-button:hover {
