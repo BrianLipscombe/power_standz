@@ -82,6 +82,12 @@ body {
     background: #000 !important;
 }
 
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 /*
 .overlay {
 	height: 100%;
