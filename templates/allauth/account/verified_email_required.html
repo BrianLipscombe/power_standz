@@ -4,13 +4,14 @@
 
 {% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
 
-{% block content %}
-<h1>{% trans "Verify Your E-mail Address" %}</h1>
+{% block inner_content %}
+<hr>
+<h2 class="logo-font mb-4">{% trans "Verify Your E-mail Address" %}</h2>
+<hr>
 
 {% url 'account_email' as email_url %}
 
-<p>{% blocktrans %}This part of the site requires us to verify that
-you are who you claim to be. For this purpose, we require that you
+<p>{% blocktrans %} We require that you
 verify ownership of your e-mail address. {% endblocktrans %}</p>
 
 <p>{% blocktrans %}We have sent an e-mail to you for
