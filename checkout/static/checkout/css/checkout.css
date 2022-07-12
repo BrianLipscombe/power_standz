@@ -38,7 +38,7 @@
 
 select,
 select option {
-    color: #7d7d7d;
+    color: #000000;
 }
 
 select:invalid,
