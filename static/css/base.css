@@ -183,6 +183,25 @@ body {
     cursor: pointer;
 }
 
+/*-- Footer --*/
+.footer-links a {
+    color: var(--whitehighlight);
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+.footer-text {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.fixed-bottom {
+    position:static;
+    bottom: 0;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
