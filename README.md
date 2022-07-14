@@ -1,108 +1,248 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome BrianLipscombe,
+<h1 align="center">PowerStandZ</h1>
+<h1 align="center"><img src="media/powerstandzlogo.png" /></h1>
+<h1 align="center"><img src="media/landing_page_screenshot.png" /></h1>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is Brian Lipscombe's fourth Milestone Project (Full Stack Frameworks with Django) at [Code Institute](https://codeinstitute.net). It was built using HTML5, CSS3, JavaScript, Python+Flask, MongoDB, Materialize, Gitpod, and deployed on the hosting platform Heroku. It is designed with Code Institute's Assessment Handbook Project Idea 0 in mind - Bring your own idea to life, based on providing value to users to address a specific real or imagined need.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The idea is to sell custom collectible device-charging stations that are inspired by popular film and TV concepts.
 
-## Gitpod Reminders
+The app can be found on Heroku [here.]()
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Experience (UX)
 
-`python3 -m http.server`
+* User Stories
 
-A blue button should appear to click: _Make Public_,
+1. Radiology Employee Goals
+    - Register a username and password.
+    - Log in.
+    - Add outpatient orders (from hard copies possibly in fax print-out basket), including modality, patient name, exam description, date, time, any pertinent comments, and indicate whether the exam is urgent or not.
+    - Edit orders if any information changes.
+    - Delete completed orders.
 
-Another blue button should appear to click: _Open Browser_.
+2. Owner Goals
+    - Provide an app that can help the workflow of hospital orders.
+    - Allow radiology employees to input, edit, complete, and manage outpatient orders more effeciently.
+    - Ensure only registered staff members have access to the app and is only used within the radiology department to protect patient information.
+    - Allow users to create new profiles after initial registration. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* Design
 
-A blue button should appear to click: _Make Public_,
+1. Color Scheme
 
-Another blue button should appear to click: _Open Browser_.
+    - Black is used for each collapsible header because in some hospitals radiology teams wear black scrubs to be quickly differentiated from other hospital staff members.
+    - White, with a bit transparency is used to add contrast against the black headers.
+    - Red is used in the top navbar to mimic the hospital's red exterior signage.
+    - Blues are used in some text and buttons to contrast the urgency of red, to bring a form of aesthetic balance.  
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+2. Imagery
 
-To log into the Heroku toolbelt CLI:
+    The background image was taken from the UCI Medical Center website [here](https://uci.edu/presidential-gateway/overview/_img/overview-future-hospital-1200x570.jpg) then modified using Adobe Photoshop.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+3. Typography
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    The fonts are kept basic for easy readability.
 
-------
+## Features
 
-## Release History
+* Responsive on all device sizes.
+* Interactive elements: Search bar, buttons, collapsible popout, and calendar date picker. 
+* Ability to create, read, upadate, and delete orders.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Technologies Used
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* [Python3](https://www.python.org/download/releases/3.0/)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* [MongoDB](https://www.mongodb.com/)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* [Heroku](https://signup.heroku.com/)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* [Font Awesome](https://fontawesome.com/)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* [Github](https://github.com/)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* [Gitpod](https://www.gitpod.io/)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* [Git](https://en.wikipedia.org/wiki/Git)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* [Balsamiq](https://balsamiq.com/)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* [Materialize](https://materializecss.com/)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Testing
 
-------
+* Clicked on all navigation links to verify that they direct to the indicated page.
 
-## FAQ about the uptime script
+* Verified that the navigation menu shifts to and from the hamburger icon on the appropriate size screens. 
 
-**Why have you added this script?**
+* Verified if the register button is clicked, register page allows user to register username and password.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* Verified that the log in button directs the user to the orders page within their profile to edit/add orders if their username and password are correct.
 
-**How will this affect me?**
+* If 'All Orders' button is clicked, user is directed to the orders page.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* Verified that the down arrows extend the collapsible and displays the details of each order when first clicked.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* Verified that the down arrows retract the collapsible details when clicked a second time. 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* Verified that the 'search' button retrieves order information that is relevant to, or matches the key terms the user searched for.
 
-**So….?**
+* Verified 'New Order' button links to the add task page.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* Verified that the new order input fields allow the user to choose or input the necessary information. 
 
-**Can I opt out?**
+* Verified that the 'complete/delete' buttons delete the orders.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* Verfied that the 'edit' buttons direct the user to the edit task page where orders can be edited.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* Verified that navigation elements work the same as all other pages.
 
-**Anything more?**
+## Responsiveness
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* This project is confirmed to be responsive on all standard screen sizes using the devtools device toolbar.
 
----
+## Browser Validation
 
-Happy coding!
+* This project is confirmed to work with different browsers: Chrome and Internet Explorer. This project has also been tested using different mobile devices such as iphone, Android, and laptops, as well as on a desktop computer.
+
+* Lighthouse Auditing
+
+    - This project scores 100 for Performance, Accessibility, and Best Practices.
+
+All pages were tested on multiple resolutions for proper responsiveness.
+
+All files and pages were validated by direct input using:
+
+* [Nu Html Checker](https://validator.w3.org/#validate_by_input)
+    - When testing the HTML code, syntax issues arise on all pages seemingly related to the use of jinja templating and other code borrowed directly from the Data Centric Design mini project.
+
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+    - No error found.
+
+* [JSHint](https://jshint.com/)
+    - No error found.
+
+* [PEP8](http://pep8online.com/)
+    - No error found.
+
+## Deployment
+
+- ### Local copy
+1. Install all the requirements: Go to the workspace. In the terminal window type: pip3 install -r requirements.txt.
+2. Create a database in MongoDB
+    - Signup and login to MongoDB account.
+    - Create a cluster and a database.
+    - Create a collection in the db: categories, tasks, and users.
+    - Add string values for the collection.
+3. Create the environment variables
+    - Create a .gitignore file in the root directory of the project.
+    - Add the env.py file in the .gitignore.
+    - Create the file env.py. This will contain all the envornment variables.
+    - Import os
+    - os.environ.setdefault("IP", "Added by developer")
+    - os.environ.setdefault("PORT", "Added by developer")
+    - os.environ.setdefault("SECRET_KEY", "Added by developer")
+    - os.environ.setdefault("MONGO_URI", "Added by developer")
+    - os.environ.setdefault("MONGO_DBNAME", "Added by developer")
+  4. Run the app: Type python3 app.py in the terminal.
+  
+- ### Heroku Deployment
+1. Set up local workspace for Heroku
+    - In terminal window type: pip3 freeze -- local > requirements.txt. (The file is needed for Heroku to know which filed to install.)
+    - In termial window type: python app.py > Procfile (The file is needed for Heroku to know which file is needed as entry point.)
+2. Set up Heroku: create a Heroku account and create a new app and select region.
+3. Deployment method 'Github'
+    - Click on the Connect to GitHub section in the deploy tab in Heroku.
+    - Search to connect with the proper repository.
+    - When repository appears click on connect to connect the repository with Heroku.
+    - Go to the settings app in Heroku and go to Config Vars. Click on Reveal Config Vars.
+    - Enter the variables contained in your env.py file. it is about: IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME
+4. Push the requirements.txt and Procfile to repository.
+    - $ git add requirements.txt
+    - $ git commit -m "Add requirements.txt"
+    - $ git add Procfile 
+    - $ git commit -m "Add Procfile"
+5. Automatic deployment: Go to the deploy tab in Heroku and scroll down to Aotmatic deployments. Click on Enable Automatic Deploys. By Manual deploy click on Deploy Branch.
+
+  Heroku will receive the code from Github and host the app using the required packages. Click on Open app in the right corner of Heroku account. The app wil open and the live link is available from the address bar.
+
+## Known Bugs
+
+* Sometimes the exam date and appointment time options will not function properly when clicked on. Other times they do function properly, especially if the tab button is used to advance into those input fields instead of clicking directly on them (this bug seems to have been fixed).
+* Editing orders will lead to error page (this error has been fixed by updating the requirements.txt file).
+
+## RESOLVED BUGS AND IMPROVEMENTS SINCE PREVIOUS SUBMISSION:
+
+* DEBUG mode is no longer turned on in production version of code. Within the app.py file debug=True was changed to debug=False. 
+
+* In order to improve UI/UX, I changed the landing page to the log in page instead of landing directly onto the orders page.
+
+* In order to improve UI/UX, after a user logs in they are directed to the orders page within their profile, where they can add/edit/delete orders.
+
+* In order to improve UI/UX, I removed the 'log in' button from the top navbar while the user is already on the log in page.
+
+* In order to improve UI/UX, the log in and register pages should no longer be visible when a user is logged in.
+
+* In order to improve UI/UX, I removed the 'reset' button previously used to reset the search field.
+
+* In order to improve UI/UX, I moved the main collapsible up to utilize more screen space.
+
+* In order to improve UI/UX, I moved the log in and registration panels up to utilize more space, and for a more consistency.
+
+* In order to improve UI/UX, I moved the hamburger icon to the upper right corner.
+
+* In order to improve UI/UX, I moved moved the 'Haven't registered yet? Click here' text/button into the bottom of the log in panel for improved visibility.
+
+* In order to hopefully meet submission criteria, the testing guidelines above within this README.md file have been revised and extended so that they are no longer considered "missing" or "incomprehensible."
+
+## Future Improvements
+
+* Change JPG images to WebP format.
+
+* Add a confirmation message after users click delete before orders are actually deleted.
+
+* Add better CRUD functionality for users to edit their profiles.
+
+* Make entities more consistent. Instead of using 'tasks' and 'orders' for the same purpose, make all entities into either 'tasks' or 'orders' not both.
+
+* Make the collapsible display orders in chronological order by the importance of the due dates, instead of by the order of when new orders were added.
+
+* Fix the appointment time icon to actually work when clicked and provide ease of adding appointment times instead of users having to manually type times into the field.
+
+## Future Improvements for Future Projects
+
+* Don't rely on source code from module walk-throughs as a template. Learn to code from scratch.
+
+* Choose a better concept that more people can relate to that can be used on a global scale that maybe offers and sells common products or services.
+
+* Don't use Materialize ever again.
+
+## Credits
+
+* Code
+
+    Code used as a template was borrowed from the Code Institute Data Centric Design Mini Project by Tim Nelson [here](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/) with his final Github commit [here.](https://github.com/Code-Institute-Solutions/TaskManagerAuth/tree/main/08-SearchingWithinTheDatabase/01-text_index_searching)
+    
+    Code for icons from [Font Awesome](https://fontawesome.com/).
+
+    All other code was written or changed by the developer.
+
+## Acknowledgements
+
+* Guidance and Moral Support
+
+    Code Institute on Slack;
+
+    My mentor Narender Singh for helping me make improvements to this project for its resubmission on short notice;
+
+    And, my family for being patient and understanding when most of my time is absorbed by work and school, and for continuing to support me even when I fail. 
+
+This site was developed for educational purposes.
