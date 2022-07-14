@@ -1,5 +1,3 @@
-
-<h1 align="center">PowerStandZ</h1>
 <h1 align="center"><img src="media/powerstandzlogo.png" /></h1>
 <h1 align="center"><img src="media/landing_page_screenshot.png" /></h1>
 
@@ -74,8 +72,6 @@ The app can be found on Heroku [here.]()
 * [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
 
 * [Balsamiq](https://balsamiq.com/)
-
-* [Materialize](https://materializecss.com/)
 
 ## Testing
 
@@ -176,32 +172,7 @@ All files and pages were validated by direct input using:
 
 ## Known Bugs
 
-* Sometimes the exam date and appointment time options will not function properly when clicked on. Other times they do function properly, especially if the tab button is used to advance into those input fields instead of clicking directly on them (this bug seems to have been fixed).
-* Editing orders will lead to error page (this error has been fixed by updating the requirements.txt file).
-
-## RESOLVED BUGS AND IMPROVEMENTS SINCE PREVIOUS SUBMISSION:
-
-* DEBUG mode is no longer turned on in production version of code. Within the app.py file debug=True was changed to debug=False. 
-
-* In order to improve UI/UX, I changed the landing page to the log in page instead of landing directly onto the orders page.
-
-* In order to improve UI/UX, after a user logs in they are directed to the orders page within their profile, where they can add/edit/delete orders.
-
-* In order to improve UI/UX, I removed the 'log in' button from the top navbar while the user is already on the log in page.
-
-* In order to improve UI/UX, the log in and register pages should no longer be visible when a user is logged in.
-
-* In order to improve UI/UX, I removed the 'reset' button previously used to reset the search field.
-
-* In order to improve UI/UX, I moved the main collapsible up to utilize more screen space.
-
-* In order to improve UI/UX, I moved the log in and registration panels up to utilize more space, and for a more consistency.
-
-* In order to improve UI/UX, I moved the hamburger icon to the upper right corner.
-
-* In order to improve UI/UX, I moved moved the 'Haven't registered yet? Click here' text/button into the bottom of the log in panel for improved visibility.
-
-* In order to hopefully meet submission criteria, the testing guidelines above within this README.md file have been revised and extended so that they are no longer considered "missing" or "incomprehensible."
+*
 
 ## Future Improvements
 
@@ -219,12 +190,7 @@ All files and pages were validated by direct input using:
 
 ## Future Improvements for Future Projects
 
-* Don't rely on source code from module walk-throughs as a template. Learn to code from scratch.
-
-* Choose a better concept that more people can relate to that can be used on a global scale that maybe offers and sells common products or services.
-
-* Don't use Materialize ever again.
-
+* 
 ## Credits
 
 * Code
@@ -241,8 +207,8 @@ All files and pages were validated by direct input using:
 
     Code Institute on Slack;
 
-    My mentor Narender Singh for helping me make improvements to this project for its resubmission on short notice;
+    My mentor Narender Singh;
 
-    And, my family for being patient and understanding when most of my time is absorbed by work and school, and for continuing to support me even when I fail. 
+    My family.
 
-This site was developed for educational purposes.
+This site was developed for educational purposes only.
