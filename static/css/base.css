@@ -39,6 +39,10 @@ body {
     width: fit-content;
 }
 
+.form-control {
+    height: calc(1.4em + 0.4rem + 2px);
+}
+
 .shop-now-button {
     background: rgb(0, 160, 0);
     color: white;
@@ -305,9 +309,13 @@ input[name='q']::placeholder {
         font-size: 1rem;
     }
 
+    .navbar {
+        padding: 0em;
+    }
+
     .navbar-toggler {
-        padding: .6rem .6rem;
-        font-size: 1rem;
+        padding: 0rem 0rem;
+        font-size: 0rem;
     }
 
     #delivery-banner h4 {
