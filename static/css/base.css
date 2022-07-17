@@ -360,7 +360,14 @@ input[name='q']::placeholder {
     .btn.btn-black.rounded-0.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg:hover {
+        color: #ffffff;
+        -webkit-text-fill-color: #000000;
+        -webkit-text-stroke-width: .75px;
+        font-size: 27px;
     }
 
     .increment-qty, .decrement-qty {
