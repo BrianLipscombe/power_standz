@@ -223,7 +223,7 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
-    color: rgb(10, 100, 0);
+    color: #6c757d;
 }
 
 .allauth-form-inner-content input {
@@ -265,12 +265,12 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
-    border-color: #222;
+    background-color: rgb(10, 100, 0);
+    border-color: rgb(10, 100, 0);
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: rgb(10, 100, 0);
 }
 
 /* Product Form */
