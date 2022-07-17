@@ -1,1 +1,1 @@
-web: gunicorn powerstandz.wsgi:application
+web: gunicorn power_standz.wsgi:application
