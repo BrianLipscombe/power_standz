@@ -362,10 +362,9 @@ input[name='q']::placeholder {
         font-size: .75rem;
     }
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg:hover {
+    .btn-outline-black:hover {
         color: #ffffff;
-        -webkit-text-fill-color: #000000;
+        -webkit-text-fill-color: #1a9535;
         -webkit-text-stroke-width: .75px;
         font-size: 27px;
     }
