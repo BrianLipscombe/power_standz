@@ -61,15 +61,34 @@ The site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
     [PulpFictionBriefcase](https://www.123rf.com/photo_117274967_black-leather-business-briefcase-on-white-background.html?vti=m4upeylkb5urkyxzat-1-68)<br>
     [AlienEgg](https://www.wantitall.co.za/toys/alien-foam-and-latex-life-size-egg-and-facehugger-prop-replica-with-led-lights__b01850nqhu)<br>
     [DarthVader](https://www.rsfigures.com/collections/darth-vader/products/royal-selangor-hand-finished-star-wars-collection-pewter-darth-vader-bust)
+
 3. Typography
 
-    The fonts are kept basic for easy readability.
+    All fonts were kept basic for easy readability, except for the logo which was designed in Adobe Photoshop using Charlemagne Std Bold font as well as additional layers for added flare and slight energetic feel.
 
 ## Features
 
-* Responsive on all device sizes.
-* Interactive elements: Search bar, buttons, collapsible popout, and calendar date picker. 
-* Ability to create, read, upadate, and delete orders.
+* Product Details
+* Purchase Products
+* Registration Form
+* Sign In
+* Sign Out
+* Update Profile
+* Recover Password
+* Order Summary
+* Add Product
+* Edit Product
+* Delete Product
+* Edit Prices
+* Responsive
+* Interactive
+
+## Wireframe
+<h1 align="center"><img src="wireframe/index.png" /></h1>
+<h1 align="center"><img src="wireframe/all_products.png" /></h1>
+<h1 align="center"><img src="wireframe/product_description.png" /></h1>
+<h1 align="center"><img src="wireframe/cart.png" /></h1>
+<h1 align="center"><img src="wireframe/empty_cart.png" /></h1>
 
 ## Technologies Used
 
