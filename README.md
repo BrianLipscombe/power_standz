@@ -183,7 +183,7 @@ All files and pages were validated by direct input using:
  <h1 align="center"><img src="validation/js_validate3.png" /></h1>   
 
 * [PEP8](http://pep8online.com/)
-    - To be determined
+    - Errors and warnings currently exist in multiple py files in this project, but some will hopefully be resolved upon resubmission. Please note, feeble attempts to fix some of these problems caused server errors after pushing to Heroku and were therefore undone, and then intentionally left in the original syntax, as provided in the Code Institute Boutique Ado walkthrough source code.
 
   ## Heroku Deployment
 1. Set up local workspace for Heroku
