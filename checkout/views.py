@@ -79,7 +79,7 @@ def checkout(request):
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. "
+                        "One of the products in your cart wasn't found. "
                         "Please call us for assistance!")
                     )
                     order.delete()
@@ -94,7 +94,7 @@ def checkout(request):
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(request, "Nothing's in your cart")
             return redirect(reverse('products'))
 
         current_bag = bag_contents(request)
@@ -106,7 +106,7 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        # Attempt to prefill the form with any info the user maintains in their profile
+
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
