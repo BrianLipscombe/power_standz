@@ -1,5 +1,5 @@
 <h1 align="center"><img src="media/powerstandzlogo.png" /></h1>
-<h1 align="center"><img src="media/landing_page_screenshot.png" /></h1>
+<h1 align="center"><img src="media/readme_banner.png" /></h1>
 
 This is Brian Lipscombe's fourth Milestone Project (Full Stack Frameworks with Django) at [Code Institute](https://codeinstitute.net). It was built using HTML5, CSS3, JavaScript, Python+Flask, MongoDB, Materialize, Gitpod, and deployed on the hosting platform Heroku. It is designed with Code Institute's Assessment Handbook Project Idea 0 in mind - Bring your own idea to life, based on providing value to users to address a specific real or imagined need.
 
