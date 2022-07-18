@@ -7,7 +7,9 @@ The idea is to sell custom collectible device-charging stations that are inspire
 
 Please note that at this stage, PowerStandz is a fictitious eCommerce store created for the purposes of satisfying the requirements for the Code Institute Full Stack Development Course Milestone Project 4.
 
-The site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
+Also, please note, it is understood there are no excuses. However, constraints in student-level skill set, along with a lack of time to study while working full time and raising a family, plus the lack of proper mentor sessions, as well as not having a single tutor session, and the inability to access the program near the end of enrollment due to a Code Institute servers error, played major parts in the current substandard state of this project.
+
+The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
 
 ## User Experience (UX)
 
@@ -187,29 +189,29 @@ All files and pages were validated by direct input using:
 * [PEP8](http://pep8online.com/)
     - Errors and warnings currently exist in multiple py files in this project, but some will hopefully be resolved upon resubmission. Please note, feeble attempts to fix some of these problems caused server errors after pushing to Heroku and were therefore undone, and then intentionally left in the original syntax, as provided in the Code Institute Boutique Ado walkthrough source code.
 
-  ## Heroku Deployment
+## Heroku Deployment
 1. Set up local workspace for Heroku
-    - In terminal window type: pip3 freeze -- local > requirements.txt. (The file is needed for Heroku to know which filed to install.)
+    - In terminal window type: pip3 freeze -- local > requirements.txt. (The file is needed for Heroku to know which file to install.)
     - In termial window type: python app.py > Procfile (The file is needed for Heroku to know which file is needed as entry point.)
-2. Set up Heroku: create a Heroku account and create a new app and select region.
+2. Set up Heroku: Access Heroku account and create a new app and select region.
 3. Deployment method 'Github'
     - Click on the Connect to GitHub section in the deploy tab in Heroku.
     - Search to connect with the proper repository.
     - When repository appears click on connect to connect the repository with Heroku.
     - Go to the settings app in Heroku and go to Config Vars. Click on Reveal Config Vars.
-    - Enter the variables contained in your env.py file. it is about: IP, PORT, SECRET_KEY
-4. Push the requirements.txt and Procfile to repository.
-    - $ git add requirements.txt
-    - $ git commit -m "Add requirements.txt"
-    - $ git add Procfile 
-    - $ git commit -m "Add Procfile"
-5. Automatic deployment: Go to the deploy tab in Heroku and scroll down to Aotmatic deployments. Click on Enable Automatic Deploys. By Manual deploy click on Deploy Branch.
+    - Enter all necessary variables.
+4. Automatic deployment: Go to the deploy tab in Heroku and scroll down to Aotmatic deployments. Click on Enable Automatic Deploys. By Manual deploy click on Deploy Branch.
+5. Add, commit, and push.
+    - $ git add .
+    - $ git commit -m ""
+    - $ git push 
+    - This will automatically push to Heroku
 
-  Heroku will receive the code from Github and host the app using the required packages. Click on Open app in the right corner of Heroku account. The app wil open and the live link is available from the address bar.
+  Heroku will receive the code from Github and host the app using the required packages. Once the build is complete, click on Open app in the right corner of Heroku account. The app wil open and the live link is available from the address bar.
 
 ## Known Bugs
 
-*
+* The company logo is not as responsive on all screens as it should be. For instance, it appears fine on mobile screen size 320px, but then becomes off center as the screen size increases, then on the largest screen setting it is smaller than preferred. Attempts at fixing this were made but unsuccessful, and due to a lack of time, it was not completely fixed.  
 
 ## Future Improvements
 
@@ -224,10 +226,7 @@ All files and pages were validated by direct input using:
 * Make the collapsible display orders in chronological order by the importance of the due dates, instead of by the order of when new orders were added.
 
 * Fix the appointment time icon to actually work when clicked and provide ease of adding appointment times instead of users having to manually type times into the field.
-
-## Future Improvements for Future Projects
-
-* 
+ 
 ## Credits
 
 * Code
