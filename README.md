@@ -60,7 +60,9 @@ The site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
     [CaptainAmericaShield](https://www.artstation.com/artwork/mqWbl1)<br>
     [PulpFictionBriefcase](https://www.123rf.com/photo_117274967_black-leather-business-briefcase-on-white-background.html?vti=m4upeylkb5urkyxzat-1-68)<br>
     [AlienEgg](https://www.wantitall.co.za/toys/alien-foam-and-latex-life-size-egg-and-facehugger-prop-replica-with-led-lights__b01850nqhu)<br>
-    [DarthVader](https://www.rsfigures.com/collections/darth-vader/products/royal-selangor-hand-finished-star-wars-collection-pewter-darth-vader-bust)
+    [DarthVader](https://www.rsfigures.com/collections/darth-vader/products/royal-selangor-hand-finished-star-wars-collection-pewter-darth-vader-bust)<br>
+    [smartphones](https://www.freepnglogos.com/pics/smartphone)<br>
+    [PS5Controllers](https://www.pngall.com/playstation-5-png/download/47893)
 
 3. Typography
 
