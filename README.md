@@ -162,17 +162,19 @@ The site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
 
 * Lighthouse Auditing
 
-    - Will be improved
+    - Scores are currently suboptimal but will hopefully be improved upon resubmission.
 
 All pages were tested on multiple resolutions for proper responsiveness.
 
 All files and pages were validated by direct input using:
 
 * [Nu Html Checker](https://validator.w3.org/#validate_by_input)
-    - To be determined
+    - Errors currently exist but will hopefully be resolved upon resubmission.
 
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-    - To be determined
+    - No errors found.
+<h1 align="center"><img src="validation/css_validate1.png" /></h1>
+<h1 align="center"><img src="validation/css_validate2.png" /></h1>   
 
 * [JSHint](https://jshint.com/)
     - To be determined
@@ -225,11 +227,11 @@ All files and pages were validated by direct input using:
 
 * Code
 
-    Code used as a template was borrowed from the Code Institute Boutique Ado project by Chris Zielinski [here](https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/250e2c2b8e43cccb56b4721cd8a8bd4de6686546)
-    
-    Code for icons from [Font Awesome](https://fontawesome.com/).
+    Code used as a template throughout this project was borrowed from the Code Institute Boutique Ado walkthrough by Chris Zielinski found [here.](https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/250e2c2b8e43cccb56b4721cd8a8bd4de6686546)
 
-    All other code was written or changed by the developer.
+    Code for the footer in this project was borrowed from the Code Institute MS4 project entitled Perkulator by Richard Ash found [here.](https://github.com/richardhenyash/perkulater)
+    
+    Other Code was taken from frameworks and toolkits such as [bootstrap](https://getbootstrap.com/) and [Font Awesome](https://fontawesome.com/).
 
 ## Acknowledgements
 
