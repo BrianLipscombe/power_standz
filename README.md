@@ -50,7 +50,7 @@ The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on 
 
 2. Imagery
 
-    The background image and logo was designed by the developer using Adobe Photoshop. All of the product images were taken from the following sites and edited by the developer also using Adobe Photoshop:<br>
+    The background image and logo were designed by the developer using Adobe Photoshop. All of the product images were taken from the following sites and edited by the developer also using Adobe Photoshop:<br>
     [Morpheus](https://www.reddit.com/r/shittymoviedetails/comments/kdzzls/in_the_matrix_1999_neo_can_either_take_either_the/)<br>
     [FleetwoodLab](https://www.amazon.de/-/en/Greenlight-GREEN86500-Fleetwood-Bounder-Breaking/dp/B07B7LSR2M)<br>
     [StarDestroyer](https://specialtyproducts.store/imperial-star-destroyer-star-wars-metal-model-kit-iconx/)<br>
@@ -166,7 +166,7 @@ The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on 
 
 * Lighthouse Auditing
 
-    - Scores are currently suboptimal but will hopefully be improved upon resubmission.
+    - Scores are currently suboptimal but will hopefully be improved upon resubmission. This might improve by changing all product images from PNG to WebP format. Please note, when attempting to do this, Gitpod did not load the WebP files that were converted. For this reason the PNG files were used.
 
 All pages were tested on multiple resolutions for proper responsiveness.
 
@@ -215,18 +215,14 @@ All files and pages were validated by direct input using:
 
 ## Future Improvements
 
-* Change JPG images to WebP format.
+* Convert JPG images to WebP format so that Gitpod will actually load them properly. This will hopefully earn a better Lighthouse performance score.
 
-* Add a confirmation message after users click delete before orders are actually deleted.
+* Add a confirmation message after users click delete before orders are deleted.
 
-* Add better CRUD functionality for users to edit their profiles.
+* Fix logo responsiveness on all screen sizes.
 
-* Make entities more consistent. Instead of using 'tasks' and 'orders' for the same purpose, make all entities into either 'tasks' or 'orders' not both.
+* Add product reviews section and contact form if possible.
 
-* Make the collapsible display orders in chronological order by the importance of the due dates, instead of by the order of when new orders were added.
-
-* Fix the appointment time icon to actually work when clicked and provide ease of adding appointment times instead of users having to manually type times into the field.
- 
 ## Credits
 
 * Code
