@@ -120,6 +120,8 @@ The site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
 
 * [Bootstrap](https://getbootstrap.com/)
 
+* [jQuery](https://jquery.com/)
+
 * [Balsamiq](https://balsamiq.com/)
 
 ## Testing
@@ -156,50 +158,29 @@ The site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
 
 ## Browser Validation
 
-* This project is confirmed to work with different browsers: Chrome and Internet Explorer. This project has also been tested using different mobile devices such as iphone, Android, and laptops, as well as on a desktop computer.
+* This project is confirmed to work with different browsers: Chrome and Internet Explorer. This project has also been tested using different mobile devices, laptops, and a desktop.
 
 * Lighthouse Auditing
 
-    - This project scores 100 for Performance, Accessibility, and Best Practices.
+    - Will be improved
 
 All pages were tested on multiple resolutions for proper responsiveness.
 
 All files and pages were validated by direct input using:
 
 * [Nu Html Checker](https://validator.w3.org/#validate_by_input)
-    - When testing the HTML code, syntax issues arise on all pages seemingly related to the use of jinja templating and other code borrowed directly from the Data Centric Design mini project.
+    - To be determined
 
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-    - No error found.
+    - To be determined
 
 * [JSHint](https://jshint.com/)
-    - No error found.
+    - To be determined
 
 * [PEP8](http://pep8online.com/)
-    - No error found.
+    - To be determined
 
-## Deployment
-
-- ### Local copy
-1. Install all the requirements: Go to the workspace. In the terminal window type: pip3 install -r requirements.txt.
-2. Create a database in MongoDB
-    - Signup and login to MongoDB account.
-    - Create a cluster and a database.
-    - Create a collection in the db: categories, tasks, and users.
-    - Add string values for the collection.
-3. Create the environment variables
-    - Create a .gitignore file in the root directory of the project.
-    - Add the env.py file in the .gitignore.
-    - Create the file env.py. This will contain all the envornment variables.
-    - Import os
-    - os.environ.setdefault("IP", "Added by developer")
-    - os.environ.setdefault("PORT", "Added by developer")
-    - os.environ.setdefault("SECRET_KEY", "Added by developer")
-    - os.environ.setdefault("MONGO_URI", "Added by developer")
-    - os.environ.setdefault("MONGO_DBNAME", "Added by developer")
-  4. Run the app: Type python3 app.py in the terminal.
-  
-- ### Heroku Deployment
+  ## Heroku Deployment
 1. Set up local workspace for Heroku
     - In terminal window type: pip3 freeze -- local > requirements.txt. (The file is needed for Heroku to know which filed to install.)
     - In termial window type: python app.py > Procfile (The file is needed for Heroku to know which file is needed as entry point.)
@@ -209,7 +190,7 @@ All files and pages were validated by direct input using:
     - Search to connect with the proper repository.
     - When repository appears click on connect to connect the repository with Heroku.
     - Go to the settings app in Heroku and go to Config Vars. Click on Reveal Config Vars.
-    - Enter the variables contained in your env.py file. it is about: IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME
+    - Enter the variables contained in your env.py file. it is about: IP, PORT, SECRET_KEY
 4. Push the requirements.txt and Procfile to repository.
     - $ git add requirements.txt
     - $ git commit -m "Add requirements.txt"
@@ -244,7 +225,7 @@ All files and pages were validated by direct input using:
 
 * Code
 
-    Code used as a template was borrowed from the Code Institute Data Centric Design Mini Project by Tim Nelson [here](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/) with his final Github commit [here.](https://github.com/Code-Institute-Solutions/TaskManagerAuth/tree/main/08-SearchingWithinTheDatabase/01-text_index_searching)
+    Code used as a template was borrowed from the Code Institute Boutique Ado project by Chris Zielinski [here](https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/250e2c2b8e43cccb56b4721cd8a8bd4de6686546)
     
     Code for icons from [Font Awesome](https://fontawesome.com/).
 
@@ -254,10 +235,6 @@ All files and pages were validated by direct input using:
 
 * Guidance and Moral Support
 
-    Code Institute on Slack;
-
-    My mentor Narender Singh;
-
-    My family.
+    Code Institute on Slack, my mentor, and most importantly my family.
 
 This site was developed for educational purposes only.
