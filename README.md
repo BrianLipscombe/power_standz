@@ -1,42 +1,66 @@
 <h1 align="center"><img src="media/powerstandzlogo.png" /></h1>
 <h1 align="center"><img src="media/readme_banner.png" /></h1>
 
-This is Brian Lipscombe's fourth Milestone Project (Full Stack Frameworks with Django) at [Code Institute](https://codeinstitute.net). It was built using HTML5, CSS3, JavaScript, Python+Flask, MongoDB, Materialize, Gitpod, and deployed on the hosting platform Heroku. It is designed with Code Institute's Assessment Handbook Project Idea 0 in mind - Bring your own idea to life, based on providing value to users to address a specific real or imagined need.
+This is Brian Lipscombe's fourth Milestone Project (Full Stack Frameworks with Django) at [Code Institute](https://codeinstitute.net). It was built using HTML5, CSS3, JavaScript, Python+Django, Postgres, Stripe, AWS, Gitpod, and deployed on the hosting platform Heroku. It is designed with Code Institute's Assessment Handbook Project Idea 0 in mind - Bring your own idea to life, based on providing value to users to address a specific real or imagined need.
 
 The idea is to sell custom collectible device-charging stations that are inspired by popular film and TV concepts.
 
-The app can be found on Heroku [here.]()
+Please note that at this stage, PowerStandz is a fictitious eCommerce store created for the purposes of satisfying the requirements for the Code Institute Full Stack Development Course Milestone Project 4.
+
+The site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
 
 ## User Experience (UX)
 
 * User Stories
 
-1. Radiology Employee Goals
-    - Register a username and password.
-    - Log in.
-    - Add outpatient orders (from hard copies possibly in fax print-out basket), including modality, patient name, exam description, date, time, any pertinent comments, and indicate whether the exam is urgent or not.
-    - Edit orders if any information changes.
-    - Delete completed orders.
+1. As a Potential Customer, I would like to be able to:
 
-2. Owner Goals
-    - Provide an app that can help the workflow of hospital orders.
-    - Allow radiology employees to input, edit, complete, and manage outpatient orders more effeciently.
-    - Ensure only registered staff members have access to the app and is only used within the radiology department to protect patient information.
-    - Allow users to create new profiles after initial registration. 
+    - Immediately understand the intent of the site.
+    - View and navigate the site on all devices.
+    - Learn about the chargers with a description of each, so I can make an informed purchasing decision.
+    - Understand the delivery charges, and how much I need to spend to get free delivery, so I can make an informed purchasing decision.
+    - Add products to my cart, so I can make a purchase.
+    - Receive confirmation of my purchase via email, so I can be confident that the purchase has been made successfully.
+    - Register on the site, so I can make a repeat purchase more easily.
+    - Contact the business via social media links with inquiries.
+
+2. As a Registered User, I would like to be able to:
+
+    - Sign in to my account.
+    - Sign out of my account.
+    - Recover a forgotten password.
+    - View and update my personal profile.
+    - See a summary of my orders.
+    - Contact the business via social media links about a specific order.
+    - Add reviews to products (this feature will be added).
+
+3. As a Business Owner, I would like to be able to:
+
+    - Add, edit and delete products.
+    - Edit product prices.
+    - Delete user reviews, in case malicious reviews are added (this feature will be added).
 
 * Design
 
 1. Color Scheme
 
-    - Black is used for each collapsible header because in some hospitals radiology teams wear black scrubs to be quickly differentiated from other hospital staff members.
-    - White, with a bit transparency is used to add contrast against the black headers.
-    - Red is used in the top navbar to mimic the hospital's red exterior signage.
-    - Blues are used in some text and buttons to contrast the urgency of red, to bring a form of aesthetic balance.  
+    - Black, white, and shades of green are mainly used throughout the site to compliment the custom logo design that intends to offer plenty of contrast and a simply yet energetic vibe. 
 
 2. Imagery
 
-    The background image was taken from the UCI Medical Center website [here](https://uci.edu/presidential-gateway/overview/_img/overview-future-hospital-1200x570.jpg) then modified using Adobe Photoshop.
-
+    The background image and logo was designed by the developer using Adobe Photoshop. All of the product images were taken from the following sites and edited by the developer also using Adobe Photoshop:<br>
+    [Morpheus](https://www.reddit.com/r/shittymoviedetails/comments/kdzzls/in_the_matrix_1999_neo_can_either_take_either_the/)<br>
+    [FleetwoodLab](https://www.amazon.de/-/en/Greenlight-GREEN86500-Fleetwood-Bounder-Breaking/dp/B07B7LSR2M)<br>
+    [StarDestroyer](https://specialtyproducts.store/imperial-star-destroyer-star-wars-metal-model-kit-iconx/)<br>
+    [Jaws](https://www.bbc.com/news/newsbeat-33591730)<br>
+    [Thor'sHammer](https://fireandsteel.ca/products/marvel-avengers-thors-hammer)<br>
+    [DoctorStrangeEnergySpell](https://www.instructables.com/Dr-Strange-Spell-Props/)<br>
+    [TheBatmanChestplate](https://geekculture.co/robert-pattinson-the-batman-symbol-seems-to-be-using-gun-parts-from-wayne-murder/)<br>
+    [Grogu](https://starwars.fandom.com/wiki/Hovering_pram)<br>
+    [CaptainAmericaShield](https://www.artstation.com/artwork/mqWbl1)<br>
+    [PulpFictionBriefcase](https://www.123rf.com/photo_117274967_black-leather-business-briefcase-on-white-background.html?vti=m4upeylkb5urkyxzat-1-68)<br>
+    [AlienEgg](https://www.wantitall.co.za/toys/alien-foam-and-latex-life-size-egg-and-facehugger-prop-replica-with-led-lights__b01850nqhu)<br>
+    [DarthVader](https://www.rsfigures.com/collections/darth-vader/products/royal-selangor-hand-finished-star-wars-collection-pewter-darth-vader-bust)
 3. Typography
 
     The fonts are kept basic for easy readability.
