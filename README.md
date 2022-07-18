@@ -1,7 +1,7 @@
 <h1 align="center"><img src="media/powerstandzlogo.png" /></h1>
 <h1 align="center"><img src="media/readme_banner.png" /></h1>
 
-This is Brian Lipscombe's fourth Milestone Project (Full Stack Frameworks with Django) at [Code Institute](https://codeinstitute.net). It was built using HTML5, CSS3, JavaScript, Python+Django, Postgres, Stripe, AWS, Gitpod, and deployed on the hosting platform Heroku. It is designed with Code Institute's Assessment Handbook Project Idea 0 in mind - Bring your own idea to life, based on providing value to users to address a specific real or imagined need.
+This is Brian Lipscombe's fourth Milestone Project (Full Stack Frameworks with Django) at [Code Institute](https://codeinstitute.net). It was built using HTML5, CSS3, JavaScript, Python+Django, Postgres, Stripe, AWS, Gitpod, and deployed on Heroku. It is designed with Code Institute's Assessment Handbook Project Idea 0 in mind - Bring your own idea to life, based on providing value to users to address a specific real or imagined need.
 
 The idea is to sell custom collectible device-charging stations that are inspired by popular film and TV concepts.
 
@@ -64,7 +64,7 @@ The site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
 
 3. Typography
 
-    All fonts were kept basic for easy readability, except for the logo which was designed in Adobe Photoshop using Charlemagne Std Bold font as well as additional layers for added flare and slight energetic feel.
+    All fonts were kept basic for easy readability, except for the logo which was designed in Adobe Photoshop using Charlemagne Std Bold font as well as additional layers for added flare and subtle glowing energetic feel.
 
 ## Features
 
@@ -83,7 +83,7 @@ The site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
 * Responsive
 * Interactive
 
-## Wireframe
+## Wireframes
 <h1 align="center"><img src="wireframe/index.png" /></h1>
 <h1 align="center"><img src="wireframe/all_products.png" /></h1>
 <h1 align="center"><img src="wireframe/product_description.png" /></h1>
@@ -100,9 +100,13 @@ The site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
 
 * [Python3](https://www.python.org/download/releases/3.0/)
 
-* [MongoDB](https://www.mongodb.com/)
+* [Django](https://www.djangoproject.com/)
 
 * [Heroku](https://signup.heroku.com/)
+
+* [AWS](https://aws.amazon.com)
+
+* [Stripe](https://stripe.com/)
 
 * [Font Awesome](https://fontawesome.com/)
 
@@ -113,6 +117,8 @@ The site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
 * [Git](https://en.wikipedia.org/wiki/Git)
 
 * [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
+
+* [Bootstrap](https://getbootstrap.com/)
 
 * [Balsamiq](https://balsamiq.com/)
 
