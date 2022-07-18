@@ -177,7 +177,10 @@ All files and pages were validated by direct input using:
 <h1 align="center"><img src="validation/css_validate2.png" /></h1>   
 
 * [JSHint](https://jshint.com/)
-    - To be determined
+    - No errors found, only a few warnings.
+ <h1 align="center"><img src="validation/js_validate1.png" /></h1>
+ <h1 align="center"><img src="validation/js_validate2.png" /></h1>
+ <h1 align="center"><img src="validation/js_validate3.png" /></h1>   
 
 * [PEP8](http://pep8online.com/)
     - To be determined
