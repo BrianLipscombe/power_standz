@@ -11,6 +11,11 @@ body {
     text-align: center;
 }
 
+.logo-image {
+    min-width: 280px;
+    max-width: 500px;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
