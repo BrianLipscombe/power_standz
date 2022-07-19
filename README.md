@@ -235,13 +235,19 @@ All files and pages were validated by direct input using:
     
     Other Code was taken from frameworks and toolkits such as [bootstrap](https://getbootstrap.com/) and [Font Awesome](https://fontawesome.com/).
 
-    All other code was written or edited by the developer. 
+    All other code was improvised by the developer.
+
+## Developer Comments
+
+* For The Record
+
+    This milestone project was difficult. It seemed neverending and I'd love to move forward from it now. I'm proud of what I was able to accomplish even if it lacks distinction and fails. I had countless setbacks, including a Code Institute servers error that prevented me from accessing the course at the worst possible time. So while writing this and submitting my project last minute, I'm doing so while at work in between helping one banged up patient after another in the emergency department at a level II trauma hospital, in the middle of the night. 
 
 ## Acknowledgements
 
 * Guidance and Moral Support
 
-    Code Institute on Slack. To say this course was difficult for me would be an understatement. Without Slack, I would have never been able to solve countless, mind-numbing problems.
+    Code Institute on Slack. Without this, I would have never been able to solve countless, mind-numbing problems.
     
     My mentor, Narender Singh, for helping me as much as I was capable of comprehending, even though I was unable to schedule proper sessions due to major time constraints and unforeseen scheduling conflicts.  
     
