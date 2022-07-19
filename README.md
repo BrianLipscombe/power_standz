@@ -1,6 +1,6 @@
 <h1 align="center"><img src="media/powerstandzlogo.png" /></h1>
 
-[PowerStandz Live Site](https://powerstandz.herokuapp.com/)
+[PowerStandZ Live Site](https://powerstandz.herokuapp.com/)
 
 <h1 align="center"><img src="media/readme_banner.png" /></h1>
 
