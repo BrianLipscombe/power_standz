@@ -229,9 +229,9 @@ All files and pages were validated by direct input using:
 
 * Code
 
-    Code used as a template throughout this project was borrowed from the Code Institute Boutique Ado walkthrough by Chris Zielinski found [here.](https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/250e2c2b8e43cccb56b4721cd8a8bd4de6686546)
+    Code used as a template throughout this project was borrowed from the Code Institute Boutique Ado walkthrough by Chris Zielinski found [here.](https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/250e2c2b8e43cccb56b4721cd8a8bd4de6686546) 
 
-    Code for the footer in this project was borrowed from the Code Institute MS4 project entitled Perkulator by Richard Ash found [here.](https://github.com/richardhenyash/perkulater)
+    Code for the footer in this project was borrowed from the Code Institute MS4 project entitled Perkulator by Richard Ash found [here.](https://github.com/richardhenyash/perkulater) His MS4 project was impressive especially with only a few products, as well as his very thorough readme.
     
     Other Code was taken from frameworks and toolkits such as [bootstrap](https://getbootstrap.com/) and [Font Awesome](https://fontawesome.com/).
 
