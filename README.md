@@ -173,7 +173,7 @@ All pages were tested on multiple resolutions for proper responsiveness.
 All files and pages were validated by direct input using:
 
 * [Nu Html Checker](https://validator.w3.org/#validate_by_input)
-    - Errors currently exist but will hopefully be resolved if resubmission is called for.
+    - Errors currently exist but will hopefully be resolved if resubmission is deemed necessary.
 
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
     - No errors found.
@@ -187,7 +187,7 @@ All files and pages were validated by direct input using:
  <h1 align="center"><img src="validation/js_validate3.png" /></h1>   
 
 * [PEP8](http://pep8online.com/)
-    - Errors and warnings currently exist in multiple py files in this project, but some will hopefully be resolved upon resubmission. Please note, feeble attempts to fix some of these problems caused server errors after pushing to Heroku and were therefore undone, and then intentionally left in the original syntax, as provided in the Code Institute Boutique Ado walkthrough source code.
+    - Errors and warnings currently exist in multiple py files in this project, but some will hopefully be resolved if resubmission is deemed necessary. Please note, feeble attempts to fix some of these problems caused server errors after pushing to Heroku and were therefore undone, and then intentionally left in the original syntax, as provided in the Code Institute Boutique Ado walkthrough source code.
 
 ## Heroku Deployment
 1. Set up local workspace for Heroku
@@ -211,15 +211,17 @@ All files and pages were validated by direct input using:
 
 ## Known Bugs
 
-* The company logo is not as responsive on all screens as it should be. For instance, it appears fine on mobile screen size 320px, but then becomes off center as the screen size increases, then on the largest screen setting it is smaller than preferred. Attempts at fixing this were made but unsuccessful, and due to a lack of time, it was not completely fixed.  
+* The company logo is not as responsive on all screens as it should be. For instance, it appears fine on mobile screen size 320px, but then becomes off center as the screen size increases, then on the largest screen setting it is smaller than preferred. Attempts at fixing this were made but unsuccessful, and due to a lack of time, it was not completely fixed.
+
+* Stripe disabled webhook endpoint. Unsure why this occurred but the disabled webhook endpoint was manually enabled again in Stripe settings.
 
 ## Future Improvements
 
-* Convert JPG images to WebP format so that Gitpod will actually load them properly. This will hopefully earn a better Lighthouse performance score.
+* Convert PNG images to WebP format so that Gitpod and the browser will actually load them properly. This will hopefully earn a better Lighthouse performance score.
 
 * Add a confirmation message after users click delete before orders are deleted.
 
-* Fix logo responsiveness on all screen sizes.
+* Fix custom logo's responsiveness on all screen sizes.
 
 * Add product reviews section and contact form if possible.
 
@@ -233,10 +235,16 @@ All files and pages were validated by direct input using:
     
     Other Code was taken from frameworks and toolkits such as [bootstrap](https://getbootstrap.com/) and [Font Awesome](https://fontawesome.com/).
 
+    All other code was written or edited by the developer. 
+
 ## Acknowledgements
 
 * Guidance and Moral Support
 
-    Code Institute on Slack, my mentor, and most importantly my family.
+    Code Institute on Slack. Without this, I would have never been able to solve countless, mind-numbing problems.
+    
+    My mentor, Narender Singh, for helping me as much as I was capable of comprehending, even though I was unable to schedule proper sessions due to major time constraints and unforeseen scheduling conflicts.  
+    
+    Most importantly my family, for dealing with me and my crazy work and studying schedules. For believing in me, that I might actually receive a diploma in software development!  
 
 This site was developed for educational purposes only.
