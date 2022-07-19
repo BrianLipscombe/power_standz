@@ -171,18 +171,6 @@ input[name='q']::placeholder {
     color: rgb(255, 255, 255);
 }
 
-/*
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: rgb(0, 0, 0);
-	z-index: -1;
-}
-*/
-
 .btt-button {
     height: 32px;
     width: 32px;
@@ -195,7 +183,7 @@ input[name='q']::placeholder {
     cursor: pointer;
 }
 
-/*-- Footer --*/
+/* Footer code borrowed from the Code Institute MS4 project Perkulator by Richard Ash */
 .footer-links a {
     color: var(--whitehighlight);
 }
