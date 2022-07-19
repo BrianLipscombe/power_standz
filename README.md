@@ -132,15 +132,19 @@ The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on 
 
 * Clicked on all buttons and navigation links to verify that they direct to the proper pages.
 
-* Verified that when each product image is clicked that they direct to the product details pages.
+* Verified that when each product image is clicked that they direct to that product's details pages.
 
 * Verified that the product quantity counter functions correctly when the + and - buttons are clicked.
 
-* Verified that the de
+* Verified that the AADD TO CART button will add the proper amount of products specified into the cart.
 
-* Verified if the register button is clicked, register page allows user to register username and password.
+* Verified that the cart toast messages appear and include a close out button, scrolling capabilities for multiple separate items added, and a GO TO SECURE CHECKOUT button that directs to the checkout page when clicked, and that the correct products appear.
 
-* Verified that the log in button directs the user to the orders page within their profile to edit/add orders if their username and password are correct.
+* Verified that products can be remove and updated in the checkout page.
+
+* Verified if the register button is clicked, register page allows user to register an email, username, and password.
+
+* Verified that the log in button directs the user to the sign in page.
 
 * If 'All Orders' button is clicked, user is directed to the orders page.
 
