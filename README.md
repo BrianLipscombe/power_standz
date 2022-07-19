@@ -7,7 +7,7 @@ The idea is to sell custom collectible device-charging stations that are inspire
 
 Please note that at this stage, PowerStandz is a fictitious eCommerce store created for the purposes of satisfying the requirements for the Code Institute Full Stack Development Course Milestone Project 4.
 
-Also, please note, constraints in student-level skill set, along with a lack of time to study while working full time and raising a family, played major parts in the current state of this project.
+Also, please note, constraints in student-level skill set, along with a lack of time to study while working full time and supporting a family, played major parts in the current state of this project.
 
 The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
 
@@ -38,7 +38,7 @@ The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on 
 
 3. As a Business Owner, I would like to be able to:
 
-    - Add, edit and delete products.
+    - Add, edit, and delete products.
     - Edit product prices.
     - Delete product reviews that are illegitimate or offensive.
 
@@ -72,8 +72,8 @@ The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on 
 
 ## Features
 
-* Product Details
 * Purchase Products
+* Product Details
 * Registration Form
 * Sign In
 * Sign Out
@@ -84,8 +84,7 @@ The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on 
 * Edit Product
 * Delete Product
 * Edit Prices
-* Responsive
-* Interactive
+* Secure Checkout
 
 ## Wireframes
 <h1 align="center"><img src="wireframe/index.png" /></h1>
@@ -241,7 +240,7 @@ All files and pages were validated by direct input using:
 
 * Guidance and Moral Support
 
-    Code Institute on Slack. Without this, I would have never been able to solve countless, mind-numbing problems.
+    Code Institute on Slack. To say this course was difficult for me would be an understatement. Without Slack, I would have never been able to solve countless, mind-numbing problems.
     
     My mentor, Narender Singh, for helping me as much as I was capable of comprehending, even though I was unable to schedule proper sessions due to major time constraints and unforeseen scheduling conflicts.  
     
