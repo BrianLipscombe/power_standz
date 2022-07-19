@@ -12,8 +12,6 @@ Please note that at this stage, PowerStandz is a fictitious eCommerce store crea
 
 Also, please note, constraints in student-level skill set, along with a lack of time to study while working full time and supporting a family, played major parts in the current state of this project.
 
-The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
-
 ## User Experience (UX)
 
 * User Stories
