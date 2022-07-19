@@ -1,4 +1,5 @@
 <h1 align="center"><img src="media/powerstandzlogo.png" /></h1>
+[PowerStandz Live Site](https://powerstandz.herokuapp.com/)
 <h1 align="center"><img src="media/readme_banner.png" /></h1>
 
 This is Brian Lipscombe's fourth Milestone Project (Full Stack Frameworks with Django) at [Code Institute](https://codeinstitute.net). It was built using HTML5, CSS3, JavaScript, Python+Django, Postgres, Stripe, AWS, Gitpod, and deployed on Heroku. It is designed with Code Institute's Assessment Handbook Project Idea 0 in mind - Bring your own idea to life, based on providing value to users to address a specific real or imagined need.
@@ -8,8 +9,6 @@ The idea is to sell custom collectible device-charging stations that are inspire
 Please note that at this stage, PowerStandz is a fictitious eCommerce store created for the purposes of satisfying the requirements for the Code Institute Full Stack Development Course Milestone Project 4.
 
 Also, please note, constraints in student-level skill set, along with a lack of time to study while working full time and supporting a family, played major parts in the current state of this project.
-
-The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
 
 ## User Experience (UX)
 
