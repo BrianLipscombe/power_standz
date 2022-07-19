@@ -7,7 +7,7 @@ The idea is to sell custom collectible device-charging stations that are inspire
 
 Please note that at this stage, PowerStandz is a fictitious eCommerce store created for the purposes of satisfying the requirements for the Code Institute Full Stack Development Course Milestone Project 4.
 
-Also, please note, it is understood there are no excuses. However, constraints in student-level skill set, along with a lack of time to study while working full time and raising a family, plus the lack of proper mentor sessions, as well as not having a single tutor session, and the inability to access the program near the end of enrollment due to a Code Institute servers error, played major parts in the current substandard state of this project.
+Also, please note, constraints in student-level skill set, along with a lack of time to study while working full time and raising a family, played major parts in the current substandard state of this project.
 
 The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
 
@@ -130,9 +130,13 @@ The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on 
 
 ## Testing
 
-* Clicked on all navigation links to verify that they direct to the indicated page.
+* Clicked on all buttons and navigation links to verify that they direct to the proper pages.
 
-* Verified that the navigation menu shifts to and from the hamburger icon on the appropriate size screens. 
+* Verified that when each product image is clicked that they direct to the product details pages.
+
+* Verified that the product quantity counter functions correctly when the + and - buttons are clicked.
+
+* Verified that the de
 
 * Verified if the register button is clicked, register page allows user to register username and password.
 
@@ -173,7 +177,7 @@ All pages were tested on multiple resolutions for proper responsiveness.
 All files and pages were validated by direct input using:
 
 * [Nu Html Checker](https://validator.w3.org/#validate_by_input)
-    - Errors currently exist but will hopefully be resolved upon resubmission.
+    - Errors currently exist but will hopefully be resolved if resubmission is called for.
 
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
     - No errors found.
