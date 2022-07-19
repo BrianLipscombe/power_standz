@@ -166,14 +166,12 @@ Also, please note, constraints in student-level skill set, along with a lack of 
 
 * Lighthouse Auditing
 
-    - Scores are currently suboptimal but will hopefully be improved especially if resubmission is deemed necessary. Converting all media files from PNG to WebP format might fix this. Please note, when previously attempting to use WebP files, they did not load properly in Gitpod or in the browser. For this reason PNG files were used.
+    - Scores are currently suboptimal unfortunately, but will hopefully be improved, especially if resubmission is deemed necessary. Converting all media files from PNG to WebP format might fix this.<br>
+    Please note though, when previously attempting to use WebP files, they did not load properly in Gitpod or in the browser for some reason. Because of this, PNG files were used and seemed to load without delay with the Wi-Fi utilized.
 
 All pages were tested on multiple resolutions for proper responsiveness.
 
-All files and pages were validated by direct input using:
-
-* [Nu Html Checker](https://validator.w3.org/#validate_by_input)
-    - Errors currently exist but will hopefully be resolved if resubmission is deemed necessary.
+All files and pages were checked for validation by direct input using:
 
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
     - No errors found.
@@ -185,6 +183,9 @@ All files and pages were validated by direct input using:
  <h1 align="center"><img src="validation/js_validate1.png" /></h1>
  <h1 align="center"><img src="validation/js_validate2.png" /></h1>
  <h1 align="center"><img src="validation/js_validate3.png" /></h1>   
+
+* [Nu Html Checker](https://validator.w3.org/#validate_by_input)
+    - Errors currently exist but will hopefully be resolved if resubmission is required.
 
 * [PEP8](http://pep8online.com/)
     - Errors and warnings currently exist in multiple py files in this project, but some will hopefully be resolved if resubmission is deemed necessary. Please note, feeble attempts to fix some of these problems caused server errors after pushing to Heroku and were therefore undone, and then intentionally left in the original syntax, as provided in the Code Institute Boutique Ado walkthrough source code.
