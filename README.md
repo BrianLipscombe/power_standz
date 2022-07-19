@@ -7,7 +7,7 @@ The idea is to sell custom collectible device-charging stations that are inspire
 
 Please note that at this stage, PowerStandz is a fictitious eCommerce store created for the purposes of satisfying the requirements for the Code Institute Full Stack Development Course Milestone Project 4.
 
-Also, please note, constraints in student-level skill set, along with a lack of time to study while working full time and raising a family, played major parts in the current substandard state of this project.
+Also, please note, constraints in student-level skill set, along with a lack of time to study while working full time and raising a family, played major parts in the current state of this project.
 
 The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on Heroku.
 
@@ -40,7 +40,7 @@ The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on 
 
     - Add, edit and delete products.
     - Edit product prices.
-    - Delete user reviews, in case malicious reviews are added (this feature will be added).
+    - Delete product reviews that are illegitimate or offensive.
 
 * Design
 
@@ -136,9 +136,11 @@ The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on 
 
 * Verified that the product quantity counter functions correctly when the + and - buttons are clicked.
 
-* Verified that the AADD TO CART button will add the proper amount of products specified into the cart.
+* Verified that the ADD TO CART button will add the proper amount of products specified into the cart.
 
 * Verified that the cart toast messages appear and include a close out button, scrolling capabilities for multiple separate items added, and a GO TO SECURE CHECKOUT button that directs to the checkout page when clicked, and that the correct products appear.
+
+* Verified that the checkout form works properly and allows users to complete orders via stripe.
 
 * Verified that products can be remove and updated in the checkout page.
 
@@ -146,23 +148,13 @@ The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on 
 
 * Verified that the log in button directs the user to the sign in page.
 
-* If 'All Orders' button is clicked, user is directed to the orders page.
+* Verified that the 'search' button retrieves the correct product that is relevant to the key terms the user searched for.
 
-* Verified that the down arrows extend the collapsible and displays the details of each order when first clicked.
+* Verified that when a user is logged in, they are able to add, edit, and delete products. 
 
-* Verified that the down arrows retract the collapsible details when clicked a second time. 
+* Verified that if a user forgets their password a reset password option is available.
 
-* Verified that the 'search' button retrieves order information that is relevant to, or matches the key terms the user searched for.
-
-* Verified 'New Order' button links to the add task page.
-
-* Verified that the new order input fields allow the user to choose or input the necessary information. 
-
-* Verified that the 'complete/delete' buttons delete the orders.
-
-* Verfied that the 'edit' buttons direct the user to the edit task page where orders can be edited.
-
-* Verified that navigation elements work the same as all other pages.
+* Verified that the social media links direct to the appropriate social sites.
 
 ## Responsiveness
 
@@ -174,7 +166,7 @@ The PowerStandz site can be found [here](https://powerstandz.herokuapp.com/) on 
 
 * Lighthouse Auditing
 
-    - Scores are currently suboptimal but will hopefully be improved upon resubmission. This might improve by changing all product images from PNG to WebP format. Please note, when attempting to do this, Gitpod did not load the WebP files that were converted. For this reason the PNG files were used.
+    - Scores are currently suboptimal but will hopefully be improved especially if resubmission is deemed necessary. Converting all media files from PNG to WebP format might fix this. Please note, when previously attempting to use WebP files, they did not load properly in Gitpod or in the browser. For this reason PNG files were used.
 
 All pages were tested on multiple resolutions for proper responsiveness.
 
