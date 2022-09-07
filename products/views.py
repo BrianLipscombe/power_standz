@@ -137,3 +137,172 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def review_product(request, product_id):
+    """ Review a Product """
+
+    # Get Product object
+    product = get_object_or_404(Product, pk=product_id)
+
+    if request.method == 'POST':
+        # Get User Review for Product
+        product_review = Review.objects.filter(
+            product=product, user=request.user).first()
+        # If Review exists
+        if product_review:
+            new_review = False
+            # Instantiate ReviewForm from POST data and review object
+            review_form = ReviewForm(request.POST, instance=product_review)
+        else:
+            new_review = True
+            # Instantiate ReviewForm from POST data
+            review_form = ReviewForm(request.POST)
+        # If form is valid
+        if review_form.is_valid():
+            # If Review is new
+            if new_review:
+                # Create Review object
+                review = review_form.save(commit=False)
+                # Set Product
+                review.product = product
+                # Set User
+                review.user = request.user
+                # Save review
+                review.save()
+                # Get review offer if it exists and apply it to Reward
+                review_offer = Offer.objects.filter(
+                    description="Review").first()
+                if review_offer:
+                    # Get User Reward
+                    reward = Reward.objects.filter(user=request.user).first()
+                    # If Reward exists
+                    if reward:
+                        # Set discount
+                        reward.discount = review_offer.discount
+                        reward.save()
+                        discount = round(review_offer.discount, 0)
+                        rewardstr = f'Thanks for being a great customer - \
+                            you have earned {discount}% \
+                            off your next order!'
+                    else:
+                        # Create reward object
+                        reward = Reward(
+                            user=request.user,
+                            discount=review_offer.discount)
+                        reward.save()
+                        rewardstr = ""
+                # Success message
+                messages.success(
+                    request,
+                    f'Review added for product: {product.friendly_name}.\
+                    {rewardstr}',
+                    extra_tags='admin'
+                )
+            else:
+                # Update Review
+                review_form.save()
+                # Success messsage
+                messages.success(
+                    request,
+                    f'Review updated for product: {product.friendly_name}.',
+                    extra_tags='admin'
+                )
+            # Redirect to Product detial page
+            return redirect(reverse('product_detail', args=[product.id]))
+
+        else:
+            # If rating not set
+            if not review_form['rating'].value():
+                # Error message
+                messages.error(
+                    request,
+                    'Error - please rate product to add review.',
+                    extra_tags='admin'
+                )
+            else:
+                # Error message
+                messages.error(
+                    request,
+                    'Failed to add or edit review. Please check review form.',
+                    extra_tags='admin'
+                )
+
+    else:
+        # Get Review object
+        product_review = Review.objects.filter(
+            product=product, user=request.user).first()
+        # If Review exists
+        if product_review:
+            # Instatiate ReviewForm from Review object
+            review_form = ReviewForm(instance=product_review)
+        else:
+            # Instatiate blank ReviewForm
+            review_form = ReviewForm
+    from_profile = False
+    # Get referer
+    referer = (request.META.get('HTTP_REFERER', '/'))
+    # Set from_profile if referred from Profile page
+    if referer:
+        rarray = referer.split('/')
+        if rarray:
+            rarray.reverse()
+            if len(rarray) > 1:
+                if rarray[1] == "profile":
+                    from_profile = True
+    # Get all Categories
+    categories_all = Category.objects.all()
+    # set semplate
+    template = "products/review_product.html"
+    # Set context
+    context = {
+        'product': product,
+        'product_review': product_review,
+        'review_form': review_form,
+        'categories_all': categories_all,
+        'from_profile': from_profile
+    }
+    # Render Product review page
+    return render(request, template, context)
+
+
+@login_required
+def delete_review(request, product_id, user_id):
+    """ Delete an existing Review """
+    # Get Product object
+    product = get_object_or_404(Product, pk=product_id)
+    # Get User object
+    user = get_object_or_404(User, pk=user_id)
+    # Get Review object for Product and User
+    review = get_object_or_404(Review, product=product, user=user)
+    # If user is not a superuser
+    if not request.user.is_superuser:
+        # Error message
+        messages.error(
+            request,
+            'Sorry, only store administrators can do that.',
+            extra_tags='admin'
+        )
+        # Redirect to Product detail page
+        return redirect(reverse('product_detail', args=[product.id]))
+    # Delete Rdview
+    review.delete()
+    # Success message
+    messages.success(
+        request,
+        f'User { user.username} review deleted for product: \
+            {product.friendly_name}.',
+        extra_tags='admin'
+    )
+    # Redirect to Product detail page
+    return redirect(reverse('product_detail', args=[product.id]))
+
+
+@login_required
+def review_product_all(request):
+    """
+    Review all products - redirects user to view all products
+    """
+    # Redirect to all Products
+    return redirect(reverse('products'))
