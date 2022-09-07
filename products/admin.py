@@ -22,17 +22,5 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
-class ReviewAdmin(admin.ModelAdmin):
-    """
-    Admin configuration for Review model
-    """
-    list_display = (
-        'user',
-        'product',
-    )
-    ordering = ['user', 'product']
-
-
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
-admin.site.register(Review, ReviewAdmin)
