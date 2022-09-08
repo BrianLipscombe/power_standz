@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+<div class="container-fluid">
+    <div class="row-products">
+        <div class="col text-center pb-1">
+            <h2 class="logo-font">Error 500</h2>
+            <img src="{{ MEDIA_URL }}stardestroyer.png" alt="stardestroyer" class="head-flowers"
+                style="position: absolute;right:0;top:-85px">
+        </div>
+    </div>
+
+    <div class="container general-container">
+        <div class="row">
+            <div class="col">
+                <p>
+                    Oh, no! Looks like there is an issue with the page you're looking for...
+                    We're working hard to fix it, meanwhile....
+                    We have a lot of other amazing products and content on our website.
+                    What would you like to do next?
+                </p>
+                <div class="error-page-ctas mt-4">
+                    <a class="cta cta-black mr-2 mb-2 d-inline-block" href="{% url 'products' %}">Shop more</a>
+                    <a class="cta cta-white d-inline-block" href="{% url 'home' %}">Back to homepage</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
