@@ -1,26 +1,30 @@
 {% extends "base.html" %}
-{% load static %}
+{% block title %}
+404
+{% endblock %}
+{% block content %}
 
-<div class="container-fluid">
-    <div class="row-products">
-        <div class="col text-center pb-1">
-            <h2 class="logo-font">Error 404</h2>
-            <img src="{{ MEDIA_URL }}stardestroyer.png" alt="stardestroyer" class="head-flowers"
-                style="position: absolute;right:0;top:-85px">
-        </div>
-    </div>
-
-    <div class="container general-container">
-        <div class="row">
-            <div class="col">
-                <p>
-                    Oh, no! We couldn't find what you were looking for...
-                    But we have a lot of other amazing products and content on our website.
-                    What would you like to do next?
-                </p>
-                <div class="error-page-ctas mt-4">
-                    <a class="cta cta-black mr-2 mb-2 d-inline-block" href="{% url 'products' %}">Shop more</a>
-                    <a class="cta cta-white d-inline-block" href="{% url 'products' %}">Back to homepage</a>
+<div class="container">
+    <div class="row">
+        <div class="col s12 offset-m1 m10 offset-l1 l10">
+            <div class="card center large">
+                <div class="card-image">
+                    <h3>We are lost...though we know how to find our way home...</h3>
+                </div>
+                <div class="card-content">
+                    <span class="card-title pink-text text-darken-1">Client: 404 - Page Not Found</span>
+                    <p>Apologies, we are lost! Please click on <a href="{% url 'products' %}" target="_self">Home Page</a>, or click
+                        on Sign In/Out below.</p>
+                    <p>&nbsp;</p>
+                    <p>Training and Development - 404 Not Found: The requested URL was not found on the server. If you
+                        entered the URL manually please check your spelling and try again.</p>
+                </div>
+                <div class="card-action">
+                    {% if request.user.is_authenticated %}
+                    <a href="{% url 'logout' %}">[ Sign Out <i class="material-icons">logout</i> ]</a>
+                    {% else %}
+                    <a href="{% url 'login' %}">[ Sign In <i class="material-icons">login</i> ]</a>
+                    {% endif %}
                 </div>
             </div>
         </div>
