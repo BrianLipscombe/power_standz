@@ -2,8 +2,10 @@
 {% load static %}
 <!-- Reviews container -->
 <div class="container text-center" id="reviews">
-    <h2 class="font-heading d-inline-block p-1 mt-5 mb-3">- Reviews -</h2>
-
+    <h2 class="font-heading d-inline-block p-1 mt-5 mb-3">Reviews</h2>
+    <div class="text-center pb-3">
+        <img src="{{ MEDIA_URL }}seperater.png" alt="no-image" class="nav-center-4">
+    </div>
     <div class="mb-2 text-center">
         <span class="rating-stars" data-value="{{ product.avg_rating }}"></span> <span>({{ reviews.count }})</span>
     </div>
@@ -123,7 +125,6 @@
                                 </div>
                                 <div class="modal-body">
                                     Are you sure you want to delete?
-                                    This will delete your review forever!!
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
