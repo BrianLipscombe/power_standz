@@ -314,7 +314,7 @@ input[name='q']::placeholder {
 
 .btn-secondary:hover {
     background-color: var(--color-light-green);
-    color: var(--white);
+    color: var(--red);
     border: solid 2px var(--color-light-green);
 }
 
