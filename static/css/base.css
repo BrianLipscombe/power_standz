@@ -116,11 +116,6 @@ input[name='q']::placeholder {
     height: 2px;
 }
 
-#mt-3 {
-    margin-top: 1rem!important;
-    background-color: #79bc81a3;
-}
-
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
@@ -173,7 +168,7 @@ input[name='q']::placeholder {
 }
 
 .table {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 160, 0);
 }
 
 .btt-button {
