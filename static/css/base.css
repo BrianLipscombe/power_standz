@@ -116,7 +116,8 @@ input[name='q']::placeholder {
     height: 2px;
 }
 
-.mt-3 {
+#mt-3 {
+    margin-top: 1rem!important;
     background-color: #79bc81a3;
 }
 
