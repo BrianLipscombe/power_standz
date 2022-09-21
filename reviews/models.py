@@ -4,6 +4,15 @@ from profiles.models import UserProfile
 from products.models import Product
 
 
+class Comment(models.Model):
+    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='product_comment')
+    description = models.TextField()
+    date_posted = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
 class Review(models.Model):
     """
     Creates a review model to allow user to perform
@@ -19,13 +28,13 @@ class Review(models.Model):
     ]
 
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='product_rating')
     title = models.CharField(max_length=50)
-    description = models.TextField()
+    # description = models.TextField()
     rating = models.IntegerField(choices=RATE)
-    upvotes = models.IntegerField(default=0)
-    downvotes = models.IntegerField(default=0)
-    date_posted = models.DateTimeField(auto_now_add=True)
+    # upvotes = models.IntegerField(default=0)
+    # downvotes = models.IntegerField(default=0)
+    # date_posted = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title

@@ -1,4 +1,4 @@
-from django.shortcuts import redirect, reverse, get_object_or_404
+from django.shortcuts import redirect, reverse, get_object_or_404, render
 from django.contrib import messages
 from django.db.models import Avg
 
@@ -13,35 +13,40 @@ def add_review(request, product_id):
     Allow user to add a review and redirect them back to the
     item product item view
     """
-    user = UserProfile.objects.get(user=request.user)
-    product = get_object_or_404(Product, pk=product_id)
-    review_form = ReviewForm()
-    review_details = {
-        'title': request.POST['title'],
-        'description': request.POST['description'],
-        'rating': request.POST['rating'],
+
+    if request.method == 'POST':
+        user = UserProfile.objects.get(user=request.user)
+        product = get_object_or_404(Product, pk=product_id)
+        review_details = {
+            'title': request.POST['title'],
+            'description': request.POST['description'],
+            'rating': request.POST['rating'],
+        }
+        review_form = ReviewForm(review_details)
+
+        # If form is valid, add user and product and save
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.user = user
+            review.product = product
+            review.save()
+
+            reviews = Review.objects.filter(product=product)
+            avg_rating = reviews.aggregate(Avg('rating'))['rating__avg']
+            product.avg_rating = int(avg_rating)
+            product.save()
+
+            messages.success(request, 'Thank you! Your review was added')
+        else:
+            messages.error(request, 'Something went wrong. '
+                                    'Make sure the form is valid.')
+        return redirect(reverse('product_detail', args=(product_id,)))
+
+    context = {
+        'product_id': product_id,
+        'review_form': ReviewForm()
     }
-    review_form = ReviewForm(review_details)
-
-    # If form is valid, add user and product and save
-    if review_form.is_valid():
-        review = review_form.save(commit=False)
-        review.user = user
-        review.product = product
-        review.save()
-
-        reviews = Review.objects.filter(product=product)
-        avg_rating = reviews.aggregate(Avg('rating'))['rating__avg']
-        product.avg_rating = int(avg_rating)
-        product.save()
-
-        messages.success(request, 'Thank you! Your review was added')
-    else:
-        messages.error(request, 'Something went wrong. '
-                                'Make sure the form is valid.')
-
-    return redirect(reverse('product_detail', args=(product_id,)))
-
+    return render(request, 'reviews/includes/reviews.html', context)
 
 def edit_review(request, review_id):
     """

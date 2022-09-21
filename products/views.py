@@ -62,10 +62,10 @@ def all_products(request):
 def product_detail(request, product_id):
     """ A view to show individual product details """
 
-    product = get_object_or_404(Product, pk=product_id)
+    product = Product.objects.select_related().get(pk=product_id)
 
     context = {
-        'product': product,
+        'product': product
     }
 
     return render(request, 'products/product_detail.html', context)

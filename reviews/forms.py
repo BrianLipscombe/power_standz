@@ -15,7 +15,7 @@ class ReviewForm(forms.ModelForm):
             'upvotes',
             'downvotes')
 
-        fields = ['title', 'description', 'rating']
+        fields = ['title', 'rating']
 
         labels = {
             'rating': 'Rating',
