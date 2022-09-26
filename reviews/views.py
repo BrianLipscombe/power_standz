@@ -18,9 +18,9 @@ def add_review(request, product_id):
         user = UserProfile.objects.get(user=request.user)
         product = get_object_or_404(Product, pk=product_id)
         review_details = {
-            'title': request.POST['title'],
-            'description': request.POST['description'],
-            'rating': request.POST['rating'],
+            'title': request.POST.get['title'],
+            'description': request.POST.get['description'],
+            'rating': request.POST.get['rating'],
         }
         review_form = ReviewForm(review_details)
 
