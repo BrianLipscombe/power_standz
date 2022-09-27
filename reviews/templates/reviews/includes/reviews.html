@@ -47,9 +47,9 @@
         {% for review in reviews %}
         <div class="col-12 col-md-5 row p-3 m-3 border">
             <!-- Title and rating -->
-            <div class="col-12 col-lg-4 text-center px-0">
+            <!-- <div class="col-12 col-lg-4 text-center px-0">
                 {{ review.id }}
-                {{ review.title }}
+                {{ review.title }} -->
                 <p class="mb-0 fw-bold text-uppercase">{{ review.comment }}</p>
                 <p class="rating-stars txt-small" data-value="{{ review.rating }}"></p>
                 <!-- For reviews written by the logged in user show edit and delete bittons -->
@@ -141,6 +141,7 @@
             <!-- Description, user and added date -->
             <div class="col-12 col-lg-8">
                 <p>"{{ review.title }}"</p>
+                <p>"{{ review.rating }}"</p>
                 <div class="row">
                     <div class="col">
                         <p class="text-end fst-italic text-secondary mb-0">-{{ review.user }}</p>
