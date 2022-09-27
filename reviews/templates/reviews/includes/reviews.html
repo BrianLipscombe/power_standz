@@ -49,6 +49,7 @@
             <!-- Title and rating -->
             <div class="col-12 col-lg-4 text-center px-0">
                 {{ review.id }}
+                {{ review.title }}
                 <p class="mb-0 fw-bold text-uppercase">{{ review.comment }}</p>
                 <p class="rating-stars txt-small" data-value="{{ review.rating }}"></p>
                 <!-- For reviews written by the logged in user show edit and delete bittons -->
@@ -82,7 +83,7 @@
                                             required="" id="id_title">
                                         <textarea name="description" cols="40" rows="10" placeholder="Description"
                                             class="add-blog-form-field textarea form-control form-control" required=""
-                                            id="id_description">{{review.description}}</textarea>
+                                            id="id_description">{{review.title}}</textarea>
                                         <select name="rating"
                                             class="add-blog-form-field select form-control form-control" required=""
                                             id="id_rating">
@@ -139,7 +140,7 @@
             </div>
             <!-- Description, user and added date -->
             <div class="col-12 col-lg-8">
-                <p>"{{ review.description }}"</p>
+                <p>"{{ review.title }}"</p>
                 <div class="row">
                     <div class="col">
                         <p class="text-end fst-italic text-secondary mb-0">-{{ review.user }}</p>
