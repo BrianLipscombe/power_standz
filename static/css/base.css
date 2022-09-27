@@ -302,7 +302,7 @@ input[name='q']::placeholder {
 
 .btn-outline-secondary:hover {
     background-color: var(--color-green);
-    color: var(--white);
+    color: var(--color-light-green);
 }
 
 .btn-secondary {
