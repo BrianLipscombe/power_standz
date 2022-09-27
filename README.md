@@ -35,7 +35,7 @@ Also, please note, constraints in student-level skill set, along with a lack of 
     - View and update my personal profile.
     - See a summary of my orders.
     - Contact the business via social media links about a specific order.
-    - Add reviews to products (this feature will be added).
+    - Add comments and/or ratings to review products.
 
 3. As a Business Owner, I would like to be able to:
 
@@ -93,6 +93,9 @@ Also, please note, constraints in student-level skill set, along with a lack of 
 <h1 align="center"><img src="wireframe/product_description.png" /></h1>
 <h1 align="center"><img src="wireframe/cart.png" /></h1>
 <h1 align="center"><img src="wireframe/empty_cart.png" /></h1>
+
+## Data Schema
+<h1 align="center"><img src="data_schema/data_schema_diagram.png" /></h1>
 
 ## Technologies Used
 
@@ -214,7 +217,23 @@ All files and pages were checked for validation by direct input using:
 
 * The company logo is not as responsive on all screens as it should be. For instance, it appears fine on mobile screen size 320px, but then becomes off center as the screen size increases, then on the largest screen setting it is smaller than preferred. Attempts at fixing this were made but unsuccessful, and due to a lack of time, it was not completely fixed.
 
-* Stripe disabled webhook endpoint. Unsure why this occurred but the disabled webhook endpoint was manually enabled again in Stripe settings.
+## FIXES SINCE INITIAL SUBMISSION TO HOPEFULLY MEET RESUBMISSION ASSESSMENT CRITERIA FOR PASSING RESULT
+
+* Added two custom Django models (comment and rating) both of which exist within the product reviews app. This was approved by my mentor and was confirmed to meet resubmission assessment criteria.
+
+* Due to prolonged deployment problems that arose after initial submission assessment, I created a new AWS S3 bucket with new access and secret key that were added to Heroku config vars.
+
+* Added "better-contrasting color schemes." Although I was happy with the dark background I initially designed, I lightened the background significantly to provide less contrast from dark to light as explained by my mentor. In doing so, I also had to adjust some of the text and icons to become more visible as well.
+
+* Fixed the quantity counter in secure checkout as it would previously allow clicks below 1 and zero into negative item quantitites.
+
+* Fixed as many red x problems as possible without causing additional errors.
+
+* Added a very basic draft data schema diagram. Due to the lack of time in solving other more vital problems, this data schema diagram is not ideal and will be fixed in the future.
+
+* Attempted to add 404 and 500 error pages, as well as fix order confirmation emails, but ran out of time while addressing other more pertinent issues with my mentor and tutor support.
+
+* Validated...
 
 ## Future Improvements
 
@@ -242,10 +261,6 @@ All files and pages were checked for validation by direct input using:
 
 * Guidance and Moral Support
 
-    Code Institute on Slack. Without this, I would have never been able to solve countless, mind-numbing problems.
-    
-    My mentor, Narender Singh, for helping me as much as I was capable of comprehending, even though I was unable to schedule proper sessions due to major time constraints and unforeseen scheduling conflicts.  
-    
-    Most importantly my family, for dealing with me and my crazy work and studying schedules. For believing in me, that I might actually receive a diploma in software development!  
+    Code Institute on Slack, my mentor, the Code Institute tutors, and most importantly my family, for dealing with me and my crazy work and studying schedules. For believing in me. 
 
 This site was developed for educational purposes only.
