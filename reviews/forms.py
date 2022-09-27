@@ -18,7 +18,7 @@ class ReviewForm(forms.ModelForm):
         fields = ['title', 'rating']
 
         labels = {
-            'rating': 'Rating',
+            'rating': 'Rate below  1 = Terrible!  |  5 = Awesome! ',
         }
 
     def __init__(self, *args, **kwargs):
@@ -27,7 +27,7 @@ class ReviewForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'title': 'Title',
+            'title': 'comment here',
             'description': 'Description',
         }
 

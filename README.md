@@ -10,8 +10,6 @@ The idea is to sell custom collectible device-charging stations that are inspire
 
 Please note that at this stage, PowerStandz is a fictitious eCommerce store created for the purposes of satisfying the requirements for the Code Institute Full Stack Development Course Milestone Project 4.
 
-Also, please note, constraints in student-level skill set, along with a lack of time to study while working full time, played major parts in the limitations of this project.
-
 ## User Experience (UX)
 
 * User Stories
