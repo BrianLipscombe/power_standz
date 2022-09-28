@@ -20,11 +20,11 @@ class Review(models.Model):
     """
 
     RATE = [
-        (1, '1'),
-        (2, '2'),
-        (3, '3'),
-        (4, '4'),
-        (5, '5'),
+        (1, '1 out of 5'),
+        (2, '2 out of 5'),
+        (3, '3 out of 5'),
+        (4, '4 out of 5'),
+        (5, '5 out of 5'),
     ]
 
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
