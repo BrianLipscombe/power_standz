@@ -33,7 +33,8 @@ Please note that at this stage, PowerStandz is a fictitious eCommerce store crea
     - View and update my personal profile.
     - See a summary of my orders.
     - Contact the business via social media links about a specific order.
-    - Add comments and/or ratings to review products.
+    - Add comments to review products.
+    - Add ratings to review products.
 
 3. As a Business Owner, I would like to be able to:
 
@@ -217,21 +218,34 @@ All files and pages were checked for validation by direct input using:
 
 ## FIXES SINCE INITIAL SUBMISSION TO HOPEFULLY MEET RESUBMISSION ASSESSMENT CRITERIA FOR PASSING RESULT
 
-* Added two custom Django models (comment and rating) both of which exist within the product reviews app. This was approved by my mentor and was confirmed to meet resubmission assessment criteria.
+* Added two custom Django models (comment and rating) both of which exist within reviews. My mentor assisted me with developing this idea and it was approved and confirmed by my mentor to meet resubmission assessment criteria.
 
-* Due to prolonged deployment problems that arose after initial submission assessment, I created a new AWS S3 bucket with new access and secret key that were added to Heroku config vars.
+* Due to prolonged deployment problems that arose after initial submission assessment, I had to create a new AWS S3 bucket with new access and secret keys that were added to Heroku config vars.
 
-* Added "better-contrasting color schemes." Although I was happy with the dark background I initially designed, I lightened the background significantly to provide less contrast from dark to light as explained by my mentor. In doing so, I also had to adjust some of the text and icons to become more visible as well.
+* Added "better-contrasting color schemes" by brightening the background significantly to provide less stark contrast from dark to light as explained by my mentor. In doing so, I also had to adjust some of the text and icons to become more visible as well.
 
 * Fixed the quantity counter in secure checkout as it would previously allow clicks below 1 and zero into negative item quantitites.
 
-* Fixed as many red x problems as possible without causing additional errors.
+* Fixed as many red x problems as possible without causing additional errors. I was unable to fix some no matter what I did and had to leave many as I'd inadvertently cause more issues. 
 
 * Added a very basic draft data schema diagram. Due to the lack of time in solving other more vital problems, this data schema diagram is not ideal and will be fixed in the future.
 
 * Attempted to add 404 and 500 error pages, as well as fix order confirmation emails, but ran out of time while addressing other more pertinent issues with my mentor and tutor support.
 
-* Validated...
+* Regarding: "Criterion 1.3 No TDD isn't followed, but extensive manual testing is done." I was informed that either TDD or manual testing is acceptable.
+
+## A Message from the Student Developer
+
+When starting to work on this MS4 project again after its initial assessment, there were many new problems I had to address before I could even begin to fix the failing criterion, all within a 10-day resubmission period.
+
+There was an inexplicable issue with AWS and after several days of troubleshooting, I eventually had to create a new S3 bucket from scratch. This issue alone, which I did not cause and which forced me to backtrack, spanned the course of about a week corresponding with my mentor and many tutors, which proved to be an enormous obstacle in itself due to the huge time zone differences.
+
+I was given extra time to resubmit due to this, but I was informed that the course was being deprecated and that I could not receive the extension duration that I was asking for.
+
+Once the AWS problem was fixed, I had a session with my mentor where more issues arose due to a simple miscommunication of commiting changes using git add . (a command used over and over again throughout the course which I was instructed by my mentor to never use again). I then had to figure out how to run a repo cleaner which took another two days to figure out. Once that was resolved, due to more errors popping up, my mentor believed I had a new AWS problem with my IAM settings and my static files and suggested I contact tutor support again and would probably have to start over uploading all my static files manually. My mentor offered to help more but instructed me to email CI mentoring to have it approved, to which it was NOT approved and my mentor could no longer help me during my final days of resubmission.
+
+Thank God for the awesome tutors who were able to help me out tremendously even though there's a major time difference that constantly conflicted with my work and family schedules here in California. The point of this message is that I had a minimal amount of proper time to make corrections to my project to meet resubmission criterion, and as I understand it, I will not get a third attempt at submitting like all other students get (that is, a second resubmission attempt). This first resubmission attempt will apparently determine whether I receive my diploma or not, which is not completely fair in my opinion, but it's out of my control and I want to move on from this project at this point anyway whether I fail or pass. That said, reviewer, if you're reading this, I beg of you to please don't fail me. if I pass, I'll remove this entire message.
+
 
 ## Future Improvements
 
@@ -241,7 +255,7 @@ All files and pages were checked for validation by direct input using:
 
 * Fix custom logo's responsiveness on all screen sizes.
 
-* Add product reviews section and contact form if possible.
+* Develop a better data schema diagram.
 
 ## Credits
 
@@ -259,6 +273,6 @@ All files and pages were checked for validation by direct input using:
 
 * Guidance and Moral Support
 
-    Code Institute on Slack, my mentor, the Code Institute tutors, and most importantly my family, for dealing with me and my crazy work and studying schedules. For believing in me. 
+    Code Institute on Slack, my mentor, the amazing Code Institute tutors, and most importantly my family, for dealing with me and my crazy work and studying schedules...and for believing in me. 
 
 This site was developed for educational purposes only.
