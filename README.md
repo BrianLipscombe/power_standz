@@ -234,19 +234,6 @@ All files and pages were checked for validation by direct input using:
 
 * Regarding: "Criterion 1.3 No TDD isn't followed, but extensive manual testing is done." I was informed that either TDD or manual testing is acceptable.
 
-## A Message from the Student Developer
-
-When starting to work on this MS4 project again after its initial assessment, there were many new problems I had to address before I could even begin to fix the failing criterion, all within a 10-day resubmission period.
-
-There was an inexplicable issue with AWS and after several days of troubleshooting, I eventually had to create a new S3 bucket from scratch. This issue alone, which I did not cause and which forced me to backtrack, spanned the course of about a week corresponding with my mentor and many tutors, which proved to be an enormous obstacle in itself due to the huge time zone differences.
-
-I was given extra time to resubmit due to this, but I was informed that the course was being deprecated and that I could not receive the extension duration that I was asking for.
-
-Once the AWS problem was fixed, I had a session with my mentor where more issues arose due to a simple miscommunication of commiting changes using git add . (a command used over and over again throughout the course which I was instructed by my mentor to never use again). I then had to figure out how to run a repo cleaner which took another two days to figure out. Once that was resolved, due to more errors popping up, my mentor believed I had a new AWS problem with my IAM settings and my static files and suggested I contact tutor support again and would probably have to start over uploading all my static files manually. My mentor offered to help more but instructed me to email CI mentoring to have it approved, to which it was NOT approved and my mentor could no longer help me during my final days of resubmission.
-
-Thank God for the awesome tutors who were able to help me out tremendously even though there's a major time difference that constantly conflicted with my work and family schedules here in California. The point of this message is that I had a minimal amount of proper time to make corrections to my project to meet resubmission criterion, and as I understand it, I will not get a third attempt at submitting like all other students get (that is, a second resubmission attempt). This first resubmission attempt will apparently determine whether I receive my diploma or not, which is not completely fair in my opinion, but it's out of my control and I want to move on from this project at this point anyway whether I fail or pass. That said, reviewer, if you're reading this, I beg of you to please don't fail me. If I pass, I'll gladly remove this entire message.
-
-
 ## Future Improvements
 
 * Convert PNG images to WebP format so that Gitpod and the browser will actually load them properly. This will hopefully earn a better Lighthouse performance score.
