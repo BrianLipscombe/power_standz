@@ -216,7 +216,7 @@ All files and pages were checked for validation by direct input using:
 
 * The company logo is not as responsive on all screens as it should be. For instance, it appears fine on mobile screen size 320px, but then becomes off center as the screen size increases, then on the largest screen setting it is smaller than preferred. Attempts at fixing this were made but unsuccessful, and due to a lack of time, it was not completely fixed.
 
-## FIXES SINCE INITIAL SUBMISSION TO HOPEFULLY MEET RESUBMISSION ASSESSMENT CRITERIA FOR PASSING RESULT
+## Fixes Since Initial Submission
 
 * Added two custom Django models (comment and rating) both of which exist within reviews. My mentor assisted me with developing this idea and it was approved and confirmed by my mentor to meet resubmission assessment criteria.
 
