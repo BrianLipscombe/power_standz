@@ -93,8 +93,7 @@ Please note that at this stage, PowerStandz is a fictitious eCommerce store crea
 <h1 align="center"><img src="wireframe/cart.png" /></h1>
 <h1 align="center"><img src="wireframe/empty_cart.png" /></h1>
 
-## Data Schema
-<h1 align="center"><img src="data_schema/data_schema_diagram.png" /></h1>
+
 
 ## Technologies Used
 
